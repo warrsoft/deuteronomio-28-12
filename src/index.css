@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@theme {
+    --color-beige: #FFF9F2;
+    --color-light: #FFF9F2;
+    --color-primary: #C47D5F;
+    --color-dark: #332B27;
+    --color-green: #D8DFC2;
+}
