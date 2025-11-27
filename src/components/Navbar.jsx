@@ -4,15 +4,14 @@ import { useState } from "react";
 
 export default function Navbar () {
 
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false);
 
     return (
         <>
             <div onClick={() => setShow(!show)} className={clsx([show ? "" : "hidden"], "fixed inset-0 bg-black/50 z-50")} />
-            <header className={clsx([
-        ], "flex justify-between items-center p-4 z-30")}>
+            <header className={"flex justify-between items-center p-4 z-30 bg-beige sticky top-0"}>
             <button>
-                <h3>De las raíces a tus manos</h3>
+                <h3 className="text-lg font-bold">De las raíces a tus manos</h3>
             </button>
             <button className="lg:hidden" onClick={() => setShow(!show)}>
                 <Bars3Icon width={30} />
