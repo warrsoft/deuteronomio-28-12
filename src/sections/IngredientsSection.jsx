@@ -1,25 +1,19 @@
+import { EyeDropperIcon, FireIcon } from "@heroicons/react/24/outline";
 import { LeafLine } from "../components/Icons";
-// import { IngredientsCard } from "../components/IngredientsCard";
+import IngredientsCard  from "../components/IngredientsCard";
 
 export default function IngredientsSection () {
     return (
-        <section className="bg-beige p-4 pt-8 flex flex-col gap-8 justify-center items-center">
-            <header className="flex flex-col items-center justify-center w-full text-center gap-4">
-                <h2 className="font-bold text-2xl">Ingredientes que nutren desde la raíz</h2>
+       <div className="bg-beige">
+         <section id="IngredientsSection" className="p-4 pt-8 flex flex-col gap-8 justify-center items-center m-auto max-w-5xl lg:gap-10">
+            <header className="flex flex-col items-center justify-center w-full text-center gap-4 lg:gap-6">
+                <h2 className="font-bold text-2xl lg:text-4xl">Ingredientes que nutren desde la raíz</h2>
                 <p>Tres poderosos ingredientes naturales que trabajan en armonía para transformar tu cabello</p>
             </header>
-            <main className="flex flex-col gap-4">
-                <article className="flex flex-col gap-2 items-center justify-center text-center">
-                    <div className="relative bg-linear-to-br from-green/50 to-primary/50 to-80% p-4 rounded-full">
-                        {"icon"}
-                        <figure className="absolute -bottom-2 -right-2 bg-primary text-light p-1 rounded-full">
-                            <LeafLine width={20} height={20}/>
-                        </figure>
-                    </div>
-                    <h3 className="font-bold text-2xl">{"title"}</h3>
-                    <h4 className="text-primary font-bold">{"subTitle"}</h4>
-                    <p>{"description"}</p>
-                </article>
+            <main className="flex flex-col gap-6 md:flex-row">
+                <IngredientsCard title={"Romero"} icon={<LeafLine width={50} height={50} />} subTitle={"Estimula la circulación"}  description={"Activa el flujo sanguíneo en el cuero cabelludo, promoviendo el crecimiento del cabello y fortaleciendo los folículos."} />
+                <IngredientsCard title={"Áloe vera"} icon={<EyeDropperIcon width={50} height={50} />} subTitle={"Hidrata y calma"}  description={"Proporciona hidratación profunda mientras calma el cuero cabelludo irritado, creando el ambiente perfecto para el crecimiento."} />
+                <IngredientsCard title={"Canela"} icon={<FireIcon width={50} height={50} />} subTitle={"Activa y fortalece"}  description={"Genera calor natural que activa los folículos dormidos y fortalece la estructura del cabello desde la raíz."} />
             </main>
             <footer>
                 <article className="bg-green/40 rounded-lg p-8 text-center border border-dark/10">
@@ -27,5 +21,6 @@ export default function IngredientsSection () {
                 </article>
             </footer>
         </section>
+       </div>
     )
 }

@@ -4,15 +4,16 @@ import { NoSymbolIcon, SparklesIcon } from "@heroicons/react/24/outline";
 
 export default function MainSection () {
     return (
-        <section className="bg-beige p-4 pt-8 flex flex-col gap-4 justify-center-items-center">
+        <div className="bg-beige">
+            <section id="MainSection" className="p-4 pt-8 flex flex-col lg:flex-row lg:items-center gap-4 justify-center-items-center max-w-5xl m-auto">
             <div className="flex flex-col gap-8">
-                <article className="flex gap-2 items-center justify-center py-2 px-4 bg-green/60 w-fit rounded-full">
+                <article className="flex gap-2 items-center justify-center py-2 px-4 bg-green/60 w-fit rounded-full text-sm">
                     <span>Natural</span>
                     <StopIcon width={10}/>
                     <span>Hecho con amor</span>
                 </article>
-                <div className="flex flex-col gap-2">
-                    <h2 className="text-2xl font-bold">De las raíces a tus manos</h2>
+                <div className="flex flex-col gap-2 lg:gap-4">
+                    <h2 className="text-2xl font-bold lg:text-3xl">De las raíces a tus manos</h2>
                     <p>
                         Detén la caída y acelera el crecimiento de tu cabello con la fuerza del romero, áloe vera y canela.
                     </p>
@@ -48,11 +49,12 @@ export default function MainSection () {
                     </article>
                 </div>
             </div>
-            <aside>
+            <aside className="">
                 <figure className="rounded-lg overflow-hidden">
-                    <img src="/hero-image.jpg" alt="hero image" />
+                    <img src="/hero-image.jpg" alt="hero image" className="lg:max-w-4xl w-full" />
                 </figure>
             </aside>
         </section>
+        </div>
     )
 } 
