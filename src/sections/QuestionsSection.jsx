@@ -19,7 +19,7 @@ export default function QuestionsSection () {
             <footer className="w-full">
                 <article className="bg-green/40 rounded-lg p-8 text-center border border-dark/10 flex flex-col gap-2">
                     ¿Tienes más preguntas? Estamos aquí para ayudarte
-                    <a className="text-primary font-bold" href="#">Contáctanos →</a>
+                    <a className="text-primary font-bold" href="https://msng.link/o?raices_a_tus_manos=ig">Contáctanos →</a>
                 </article>
             </footer>
         </section>

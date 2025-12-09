@@ -14,16 +14,14 @@ export default function MainSection () {
                 </article>
                 <div className="flex flex-col gap-2 lg:gap-4">
                     <h2 className="text-2xl font-bold lg:text-3xl">De las raíces a tus manos</h2>
-                    <p>
-                        Detén la caída y acelera el crecimiento de tu cabello con la fuerza del romero, áloe vera y canela.
-                    </p>
+                    <span className="opacity-50 italic">"Te abrirá Jehová su buen tesoro, el cielo, para enviar la lluvia a tu tierra en su tiempo, y para bendecir toda obra de tus manos. Y prestarás a muchas naciones, y tú no pedirás prestado."</span>
                     <span className="opacity-50 italic">(Deuteronomio 28:12)</span>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-2">
-                    <a href="https://www.instagram.com/raices_a_tus_manos/?igsh=NDh6NTM1NWdvd3Fw#" target="_blank" className="bg-primary p-2 w-full text-center rounded-lg text-light font-bold">
+                    <a href="https://msng.link/o?raices_a_tus_manos=ig" target="_blank" className="bg-primary p-2 w-full text-center rounded-lg text-light font-bold">
                         Comprar ahora
                     </a>
-                    <a href="https://www.instagram.com/raices_a_tus_manos/?igsh=NDh6NTM1NWdvd3Fw#" target="_blank" className="flex items-center justify-center w-full gap-4 p-2 bg-transparent border border-dark/10 rounded-lg font-bold">
+                    <a href="https://msng.link/o?raices_a_tus_manos=ig" target="_blank" className="flex items-center justify-center w-full gap-4 p-2 bg-transparent border border-dark/10 rounded-lg font-bold">
                         <Instagram />
                         <span>Síguenos en Instagram</span>
                     </a>
@@ -51,7 +49,7 @@ export default function MainSection () {
             </div>
             <aside className="">
                 <figure className="rounded-lg overflow-hidden">
-                    <img src="/hero-image.jpg" alt="hero image" className="lg:max-w-4xl w-full" />
+                    <img src="/hero-image.png" alt="hero image" className="lg:w-8xl w-full" />
                 </figure>
             </aside>
         </section>
