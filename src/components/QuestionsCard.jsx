@@ -23,7 +23,7 @@ export default function QuestionsCard ({ question, answer }) {
     }, [open]);
 
     return (
-        <article ref={cardRef} className={`flex flex-col gap-4 p-4 bg-light rounded-xl shadow-md ${!open ? 'h-15' : 'h-full'} transition-all duration-200 overflow-hidden`}>
+        <article ref={cardRef} className={`flex flex-col gap-4 p-4 bg-light rounded-xl shadow-md ${!open ? 'h-15' : 'h-full'} transition-all duration-200 overflow-hidden cursor-pointer`}>
             <header className="flex justify-between items-center" onClick={() => setOpen(!open)}>
                 <span>{question}</span>
                 <div className={`${!open ? '' : 'rotate-180'} transition-transform duration-200`}>

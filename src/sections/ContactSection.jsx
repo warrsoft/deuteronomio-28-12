@@ -22,7 +22,7 @@ export default function ContactSection () {
             </div>
             <div className="flex flex-col gap-2">
                 <h3 className="text-xl font-bold">Contáctanos</h3>
-                <a target="_blank" className="flex items-center gap-2" href="https://www.instagram.com/raices_a_tus_manos/?igsh=NDh6NTM1NWdvd3Fw#">
+                <a target="_blank" className="flex items-center gap-2" href="https://msng.link/o?raices_a_tus_manos=ig">
                     <Instagram />
                     Síguenos en Instagram
                 </a>
